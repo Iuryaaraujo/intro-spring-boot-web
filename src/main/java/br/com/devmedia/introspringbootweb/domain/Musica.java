@@ -13,8 +13,8 @@ public class Musica {
     private long id;
 
     @NotBlank
-    @Size(min = 2, max = 50)
-    @Column(nullable = false, length = 50)
+    @Size(min = 2, max = 60)
+    @Column(nullable = false, length = 60)
     private String titulo;
 
     @NotBlank
