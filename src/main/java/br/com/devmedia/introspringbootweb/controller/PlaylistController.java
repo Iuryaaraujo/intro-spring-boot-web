@@ -48,7 +48,7 @@ public class PlaylistController {
         return new ModelAndView("/playlist/add", model);
     }
 
-    @PutMapping("/salvar")
+    @PostMapping("/atualizar")
     public ModelAndView atualizar(@Valid @ModelAttribute("playlist") Playlist playlist, BindingResult result, RedirectAttributes attr) {
         if (result.hasErrors()) {
             return new ModelAndView("/playlist/add");
